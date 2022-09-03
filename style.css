@@ -1,0 +1,114 @@
+* { margin: 0; padding: 0; }
+body{
+    background-color: #000;
+}
+main {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    
+    background-color: #000;
+
+
+}
+.iniciarjuego {
+    display: block;
+    padding: 24px;
+    position: absolute;
+    top:250px;
+    left: 481px;
+    width: 317px;
+    height: 114px;
+    font-size: 18px;
+    color: #fff  ;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #3afe13,
+              0 0 0.8rem #3afe13, 
+              inset 0 0 1.3rem #3afe13;
+            
+    border-radius: 2rem ; 
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #3afe13,
+    0 0 21px #3afe13,
+    0 0 42px #3afe13,
+    0 0 82px #3afe13,
+    0 0 92px #3afe13,
+    0 0 102px #3afe13,
+    0 0 151px #3afe13;         
+
+   
+}
+.agregarpalabra {
+    display: block;
+    padding: 24px;
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    left: 499px;
+    top: 402px;
+    font-size: 16px;
+    color: #fff  ;
+    background-color: transparent;
+    border-radius: 1.3rem ; 
+    border: 0.1rem solid #fff;   
+}  
+
+.agregarpalabra:hover{
+    animation: luces 3s infinite;
+}
+            
+ @keyframes luces {
+    0%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+    
+        }
+    50%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #3afe13;
+              
+                
+            
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13;
+        
+    
+            }
+    
+    100%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #3afe13,
+              0 0 0.8rem #3afe13, 
+              inset 0 0 1.3rem #3afe13;
+            
+        
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13,
+        0 0 82px #3afe13,
+        0 0 92px #3afe13,
+        0 0 102px #3afe13,
+        0 0 151px #3afe13; 
+
+        }
+
+    
+        
+    }
+    
+    
+
+
