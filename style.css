@@ -169,11 +169,17 @@ main {
         width: 100%;
         
     }
+    
     .iniciarjuego, .agregarpalabra {
-        position: static;
-        margin: auto;
-        animation: luces 3s infinite;
+        position: relative;
+        top:200px;
+        left: 0%;
+        margin: 50px auto 50px auto;
+    
+    }
 
+    .iniciarjuego:hover, .agregarpalabra:hover {
+        animation:luces 3s infinite;
     }
      
 }
