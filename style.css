@@ -7,6 +7,7 @@ main {
     width: 1280px;
     height: 720px;
     background-color: #000;
+    border:white solid 1px;
 
 
 }
@@ -20,6 +21,16 @@ main {
     animation:luces-texto 1.5s infinite;
     font-size: 75px;
     font-weight: bold;
+}
+.logo-violeta {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    color:white;
+    animation:luces-texto 1.5s infinite;
+    font-size: 75px;
+    font-weight: bold;
+    animation: luces-solo-violeta 3s infinite;
 }
 .iniciarjuego {
     display: block;
@@ -121,47 +132,93 @@ main {
     
         
     }
-    @keyframes luces-texto {
-        0%{
-            
-            text-shadow: 0 0 7px #fff;
-        
-            }
-        50%{
-            
-                    
-                
-            text-shadow:
-            0 0 7px #fff,
-            0 0 10px #3afe13,
-            0 0 21px #3afe13,
-            0 0 42px #3afe13;
-            
-        
-                }
-        75%{
-            
-            text-shadow: 0 0 7px #fff;
-    
-        }        
-        
-        100%{
-            
-            text-shadow:
-            0 0 7px #fff,
-            0 0 10px #3afe13,
-            0 0 21px #3afe13,
-            0 0 42px #3afe13,
-            0 0 82px #3afe13,
-            0 0 92px #3afe13,
-            0 0 102px #3afe13,
-            0 0 151px #3afe13; 
-    
-            }
-    
-        
-            
+@keyframes luces-texto {
+    0%{
+        text-shadow: 0 0 7px #fff;      
         }
+    50%{     
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13;    
+        }
+    75%{
+        text-shadow: 0 0 7px #fff;
+        }        
+    100%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13,
+        0 0 82px #3afe13,
+        0 0 92px #3afe13,
+        0 0 102px #3afe13,
+        0 0 151px #3afe13; 
+    }
+}
+@keyframes luces-solo-violeta {
+    0%{
+       text-shadow: 0 0 7px #fff;
+    }
+    50%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe;
+       
+    }
+    75%{
+        text-shadow: 0 0 7px #fff;
+        
+    }        
+    100%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe,
+       0 0 82px #b413fe,
+       0 0 92px #b413fe;
+       
+    }
+}  
+
+@keyframes luces-texto-violeta {
+    0%{
+       text-shadow: 0 0 7px #fff;
+    }
+    50%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe;
+       box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #b413fe;
+    }
+    75%{
+        text-shadow: 0 0 7px #fff;
+        box-shadow: 0 0 .2rem #fff;
+    }        
+    100%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe,
+       0 0 82px #b413fe,
+       0 0 92px #b413fe;
+       box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #b413fe,
+              0 0 0.8rem #b413fe, 
+              inset 0 0 1.3rem #b413fe;
+    }
+}           
 
 @media screen and (max-width:480px){
 
@@ -183,6 +240,56 @@ main {
     }
      
 }
+
+.texto-violeta {
+    position: absolute;
+    width: 299px;
+    height: 48px;
+    left: 376px;
+    top: 256px;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border:none;
+    outline: none;
+}
+.texto-violeta:hover {
+    animation:luces-solo-violeta 3s infinite;
+}
+
+.botones-caja{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 296px;
+    top: 449px;
+    
+    
+}
+
+.botones-agregar {
+    width: 332px;
+    height: 67px;
+    background-color: transparent;
+    color:white;
+    border:white solid 2px;
+    border-radius:24px;
+    font-size: 18px;
+
+}
+
+.botones-agregar:hover {
+    
+    animation:luces-texto-violeta 3s infinite;
+    
+}
+
 /*
 box-shadow: 0 0 .2rem #fff,
               0 0 .2rem #fff,
@@ -201,5 +308,37 @@ box-shadow: 0 0 .2rem #fff,
     0 0 102px #3afe13,
     0 0 151px #3afe13;     
 */
+.botones-agregar:hover {
+       
+}
+@keyframes luces-caja-violeta {
+    0%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        
+    
+        }
+    50%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #b413fe;
+              
+        }
+    75%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
 
+    }        
+    
+    100%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #b413fe,
+              0 0 0.8rem #b413fe, 
+              inset 0 0 1.3rem #b413fe;
+        }
 
+    
+        
+    }
