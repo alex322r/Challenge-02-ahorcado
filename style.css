@@ -10,6 +10,17 @@ main {
 
 
 }
+.logo {
+    
+    position: absolute;
+    
+    left: 40px;
+    top: 10px;
+    color:white;
+    animation:luces-texto 1.5s infinite;
+    font-size: 75px;
+    font-weight: bold;
+}
 .iniciarjuego {
     display: block;
     padding: 24px;
@@ -110,12 +121,53 @@ main {
     
         
     }
-
+    @keyframes luces-texto {
+        0%{
+            
+            text-shadow: 0 0 7px #fff;
+        
+            }
+        50%{
+            
+                    
+                
+            text-shadow:
+            0 0 7px #fff,
+            0 0 10px #3afe13,
+            0 0 21px #3afe13,
+            0 0 42px #3afe13;
+            
+        
+                }
+        75%{
+            
+            text-shadow: 0 0 7px #fff;
+    
+        }        
+        
+        100%{
+            
+            text-shadow:
+            0 0 7px #fff,
+            0 0 10px #3afe13,
+            0 0 21px #3afe13,
+            0 0 42px #3afe13,
+            0 0 82px #3afe13,
+            0 0 92px #3afe13,
+            0 0 102px #3afe13,
+            0 0 151px #3afe13; 
+    
+            }
+    
+        
+            
+        }
 
 @media screen and (max-width:480px){
 
     main{
         width: 100%;
+        
     }
     .iniciarjuego, .agregarpalabra {
         position: static;
