@@ -2,11 +2,15 @@
 body{
     background-color: #000;
 }
+a {
+    text-decoration: none;
+}
 main {
     position: relative;
     width: 1280px;
     height: 720px;
     background-color: #000;
+    border:white solid 1px;
    
 
 
@@ -32,6 +36,18 @@ main {
     font-weight: bold;
     animation: luces-solo-violeta 3s infinite;
 }
+
+.logo-naranja {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    color:white;
+    animation:luces-texto-naranja 1.5s infinite;
+    font-size: 75px;
+    font-weight: bold;
+    animation: luces-texto-naranja 3s infinite;
+}
+
 .iniciarjuego {
     display: block;
     padding: 24px;
@@ -218,7 +234,93 @@ main {
               0 0 0.8rem #b413fe, 
               inset 0 0 1.3rem #b413fe;
     }
-}           
+}
+
+@keyframes luces-texto-naranja {
+    0%{
+        text-shadow: 0 0 7px #fff;
+     }
+     50%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13;
+        
+     }
+     75%{
+         text-shadow: 0 0 7px #fff;
+         
+     }        
+     100%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13,
+        0 0 82px #fe5d13,
+        0 0 92px #fe5d13;
+        
+     }
+    
+}
+
+@keyframes luces-caja-naranja {
+    0%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+    
+        }
+    50%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #fe5d13;
+              
+                
+            
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13;
+        
+    
+            }
+    75%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+
+    }        
+    
+    100%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #fe5d13,
+              0 0 0.8rem #fe5d13, 
+              inset 0 0 1.3rem #fe5d13;
+            
+        
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13,
+        0 0 82px #fe5d13,
+        0 0 92px #fe5d13,
+        0 0 102px #fe5d13,
+        0 0 151px #fe5d13; 
+
+        }
+
+    
+        
+    }
+
+
 .texto-violeta {
     position: absolute;
     width: 299px;
@@ -256,11 +358,190 @@ main {
     height: 67px;
     background-color: transparent;
     color:white;
-    border:white solid 2px;
-    border-radius:24px;
+    border: 0.1rem solid #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+    text-shadow: 0 0 1px #fff;
     font-size: 18px;
 
 }
+
+.ahoracado-munheco {
+    position: absolute;
+    width: 294px;
+    height: 360px;
+    left: 493px;
+    top: 38px;
+    border: white solid 2px;
+    
+
+}
+
+.cabeza {
+    
+    width: 63px;
+    height: 63px;
+    left: 217.67px;
+    top: 13px;
+    
+    border: red solid 2px;
+    border-radius:50%;
+
+}
+
+.piso {
+    
+    width: 294px;
+    height: 5px;
+    left: 493px;
+    top: 503px;
+    border:red solid 2px;
+    border-radius: 8px;
+}
+
+.palabras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    
+    
+    position: absolute;
+    width: 464px;
+    height: 152px;
+    left: 408px;
+    top: 412px;
+
+}
+.palabra-adivinar {
+    width: 464px;
+    height: 92px;
+    
+
+
+}
+
+.letras-adivinar{
+    vertical-align: center;
+    display: inline-block;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    animation: luces-texto-naranja 3s infinite;
+    
+
+
+
+}
+.letras-adivinar1 {
+    position: absolute;
+    width: 80px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    
+
+}
+.letras-adivinar2 {
+    position: absolute;
+    width: 80px;
+    height: 92px;
+    left: 96px;
+    top: 0px;
+
+    
+
+}
+.letras-adivinar3 {
+    position: absolute;
+    width: 80px;
+    height: 92px;
+    left: 192px;
+    top: 0px;
+    
+
+}
+.letras-adivinar4 {
+    position: absolute;
+    width: 80px;
+    height: 92px;
+    left: 288px;
+    top: 0px;
+    
+
+}
+.letras-adivinar5 {
+    position: absolute;
+    width: 80px;
+    height: 92px;
+    left: 384px;
+    top: 0px;
+    
+
+}
+
+
+   
+
+
+
+
+.espacio{
+    
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    top: 88px;
+    background-color: white;
+    border-radius: 8px;
+    animation: luces-caja-naranja 3s infinite;
+
+
+}
+.botones-ahorcado {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 296px;
+    top: 580px;
+}
+
+.botones-ahorcado button {
+    width: 332px;
+    height: 67px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+    text-shadow: 0 0 1px #fff;
+    
+    
+
+
+}
+
+.botones-ahorcado button:hover{
+
+    animation: luces-caja-naranja 3s infinite;
+
+}
+
+
+
 
 @media screen and (max-width:480px){
 
@@ -372,3 +653,35 @@ box-shadow: 0 0 .2rem #fff,
     
         
     }
+
+    @keyframes luces-caja-naranja {
+        0%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff;
+            
+            
+        
+            }
+        50%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #fe5d13;
+                  
+            }
+        75%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff;
+    
+        }        
+        
+        100%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #fe5d13,
+                  0 0 0.8rem #fe5d13, 
+                  inset 0 0 1.3rem #fe5d13;
+            }
+    
+        
+            
+        }
