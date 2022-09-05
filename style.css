@@ -654,7 +654,7 @@ box-shadow: 0 0 .2rem #fff,
         
     }
 
-    @keyframes luces-caja-naranja {
+    @keyframes luces-espacio-naranja {
         0%{
             box-shadow: 0 0 .2rem #fff,
                   0 0 .2rem #fff;
