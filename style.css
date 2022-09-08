@@ -567,6 +567,7 @@ main {
         top:200px;
         left: 0%;
         margin: 50px auto 50px auto;
+        animation:luces 3s infinite;
     
     }
     /*
