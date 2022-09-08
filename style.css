@@ -569,10 +569,11 @@ main {
         margin: 50px auto 50px auto;
     
     }
-
+    /*
     .iniciarjuego:hover, .agregarpalabra:hover {
         animation:luces 3s infinite;
     }
+    */
     .texto-violeta{
         
         position: relative;
