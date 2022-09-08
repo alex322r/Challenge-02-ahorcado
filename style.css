@@ -78,6 +78,9 @@ main {
     text-shadow: 0 0 1px #fff;
       
 }
+.caido {
+    transform: rotate(45deg);
+}
 .iniciarjuego:hover{
     animation: luces-texto 2s infinite;  
 }
