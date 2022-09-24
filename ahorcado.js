@@ -1,25 +1,88 @@
-var palabras = ["alura"];
-var palabraSelecionada = seleccionarPalabra();
-document.getElementById("palabra").innerHTML = palabraSelecionada.replace(/\w/g,"*");
+let palabras = ["alura","html","css","oracle"];
 
-function seleccionarPalabra() {
+let tablero = document.querySelector(".palabra-adivinar");
+let tablero2 = document.querySelector(".letras-usadas");
+let palabraSecreta = "";
+let letras = [];
+let errores = 8;
 
-    return palabras[Math.floor(Math.random()*palabras.length)].toUpperCase();
+
+function escogerPalabraSecreta() {
+
+    let palabra = palabras[Math.floor(Math.random()*palabras.length)].toUpperCase();
+    palabraSecreta = palabra;
+    console.log(palabraSecreta);
 
 }
 
-console.log(palabraSelecionada);
-var palabraActual = palabraSelecionada.replace(/\w/g,"*"); 
-console.log(palabraActual);
-var caracterSeleccionado = prompt("ingrese un caracter");
-caracterSeleccionado = caracterSeleccionado.toUpperCase();
+function comprobarLetra(key) {
+    let estado =false;
+    if(key >=65 && letras.indexOf(key) || key <= 90 && letras.indexOf(key)){
+        letras.push(key)
+        console.log(key)
+        return estado
 
-if (palabraSelecionada.includes(caracterSeleccionado)){
-    
-    palabraActual = palabraActual.replace(palabraActual[],caracterSeleccionado);
-    console.log(palabraActual);
+    }else { 
+        estado = true
+        console.log(key)
+        return estado
+    }
     
 }
 
+ function dibujarEspacios(letra) {
+     for(let i=0;i<palabraSecreta.length;i++){
+         let item = document.createElement("SPAN");
+         let textItem = document.createTextNode("");
+         item.appendChild(textItem);
+         tablero.appendChild(item);
+         item.classList.add("letra-adivinada");
+
+     }
+    
+ }
+
+ function escribirLetraCorrecta(letra) {
+    for(let i=0;i<palabraSecreta.length;i++){
+        let item = document.createElement("SPAN");
+        let textItem = document.createTextNode(letra);
+        item.appendChild(textItem);
+        tablero.appendChild(item);
+        item.classList.add("letra-adivinada");
+        
+        
+    }
+   
+}
+
+//  function anadirLetraIncorrecta() {
+//     errores=errores-1;
+//     
+    
+//  }
 
 
+function iniciarJuego() {
+
+    escogerPalabraSecreta();
+    dibujarEspacios();
+    document.onkeydown = (e)=> {
+        let letra = e.key.toUpperCase();
+        
+        
+        if(comprobarLetra(letra) && palabraSecreta.includes(letra)){
+            for(let i=0 ; i<palabraSecreta.length; i++){
+                if(palabraSecreta[i]=== letra){
+                    escribirLetraCorrecta(letra);
+                }
+            }
+        } 
+    }
+    
+}
+
+// function escribirLetraCorrecta(index) {
+    // tablero.
+    
+// }
+iniciarJuego()

@@ -1,7 +1,34 @@
+/* Hello Denver Font by Good Apples (http://goodappl.es) is licensed under a 
+   Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
+*/
+
+
 @font-face {
-    font-family: myFont;
-    src: url(hellodenverdisplayregular_v1.6.woff);
-  }
+    font-family: 'myFont';
+    src: url('fonts/hellodenverdisplaybold_v1.6.eot');
+    src: url('fonts/hellodenverdisplaybold_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hellodenverdisplaybold_v1.6.woff') format('woff'),
+         url('fonts/hellodenverdisplaybold_v1.6.ttf') format('truetype'),
+         url('fonts/hellodenverdisplaybold_v1.6.svg#HELLODENVERDISPLAYBOLDBoldRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/hellodenverdisplayregular_v1.6.eot');
+    src: url('fonts/hellodenverdisplayregular_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hellodenverdisplayregular_v1.6.woff') format('woff'),
+         url('fonts/hellodenverdisplayregular_v1.6.ttf') format('truetype'),
+         url('fonts/hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 * { margin: 0; padding: 0; }
@@ -78,11 +105,9 @@ main {
     text-shadow: 0 0 1px #fff;
       
 }
-.caido {
-    transform: rotate(45deg);
-}
+
 .iniciarjuego:hover{
-    animation: luces-texto 2s infinite;  
+    animation: luces-texto 3s infinite;  
 }
 
 .agregarpalabra {
@@ -357,32 +382,27 @@ main {
 
 .botones-caja{
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
     position: absolute;
     width: 688px;
-    height: 67px;
+    height: 167px;
     left: 296px;
     top: 449px;
     
-    
+        
 }
 
 .botones-agregar {
     width: 332px;
-    height: 67px;
+    height: 67px;    
     background-color: transparent;
+    border:white solid 1px; 
     color:white;
-    border: 0.1rem solid #fff;
-    border-radius: 2rem;
-    box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff;
-        
     text-shadow: 0 0 1px #fff;
+    font-family: myFont;
     font-size: 18px;
-
 }
 
 .ahoracado-munheco {
@@ -424,85 +444,42 @@ main {
     align-items: center;
     padding: 0px;
     gap: 24px;
-    
-    
     position: absolute;
     width: 464px;
     height: 152px;
     left: 408px;
     top: 412px;
+    color:white;
 
 }
 .palabra-adivinar {
     width: 464px;
     height: 92px;
-    
-    
-
-
-}
-
-.letras-adivinar{
-    vertical-align: center;
-    display: inline-block;
-    color:white;
     text-align: center;
-    font-size: 50px;
-    animation: luces-texto-naranja 3s infinite;
+    
     
 
-
-
+    
 }
-.letras-adivinar1 {
-    position: absolute;
-    width: 80px;
+
+.letra-adivinada {
+    display :inline-block;
+    
+    width: 62px;
     height: 92px;
-    left: 0px;
-    top: 0px;
+    line-height: 92px;
+    vertical-align: middle;
+    font-size:50px;
+    margin-left: 8px;
     
-
-}
-.letras-adivinar2 {
-    position: absolute;
-    width: 80px;
-    height: 92px;
-    left: 96px;
-    top: 0px;
-
     
-
-}
-.letras-adivinar3 {
-    position: absolute;
-    width: 80px;
-    height: 92px;
-    left: 192px;
-    top: 0px;
-    
-
-}
-.letras-adivinar4 {
-    position: absolute;
-    width: 80px;
-    height: 92px;
-    left: 288px;
-    top: 0px;
-    
-
-}
-.letras-adivinar5 {
-    position: absolute;
-    width: 80px;
-    height: 92px;
-    left: 384px;
-    top: 0px;
-    
-
+    border-bottom: red solid 1px;
 }
 
 
-   
+
+
+
 
 
 
@@ -602,6 +579,7 @@ main {
         left: 0px;
         top: 349px;
         margin: auto;
+        
            
     }
     .botones-agregar {
@@ -618,7 +596,7 @@ main {
 
 .botones-agregar:hover {
     
-    animation:luces-texto-violeta 3s infinite;
+    animation:luces-solo-violeta 3s infinite;
     
 }
 
