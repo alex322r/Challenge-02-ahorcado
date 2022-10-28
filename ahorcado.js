@@ -1,4 +1,4 @@
-let palabras = ["alura","html","css","oracle"];
+let palabras = ["html","oracle"];
 
 let tablero = document.querySelector(".palabra-adivinar");
 let tablero2 = document.querySelector(".letras-usadas");
@@ -34,26 +34,17 @@ function comprobarLetra(key) {
      for(let i=0;i<palabraSecreta.length;i++){
          let item = document.createElement("SPAN");
          let textItem = document.createTextNode("");
+         
          item.appendChild(textItem);
          tablero.appendChild(item);
          item.classList.add("letra-adivinada");
+         
 
      }
     
  }
 
- function escribirLetraCorrecta(letra) {
-    for(let i=0;i<palabraSecreta.length;i++){
-        let item = document.createElement("SPAN");
-        let textItem = document.createTextNode(letra);
-        item.appendChild(textItem);
-        tablero.appendChild(item);
-        item.classList.add("letra-adivinada");
-        
-        
-    }
-   
-}
+ 
 
 //  function anadirLetraIncorrecta() {
 //     errores=errores-1;
@@ -73,7 +64,7 @@ function iniciarJuego() {
         if(comprobarLetra(letra) && palabraSecreta.includes(letra)){
             for(let i=0 ; i<palabraSecreta.length; i++){
                 if(palabraSecreta[i]=== letra){
-                    escribirLetraCorrecta(letra);
+                    
                 }
             }
         } 
