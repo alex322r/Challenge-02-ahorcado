@@ -5,14 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge 02 Juego del ahorcado</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/ahorcado.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/luces.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <main>
-        <p class="logo">a</p>
-        <a href="ahorcado.html"><button class="iniciarjuego">INICIAR JUEGO</button></a>
-        <a href="nuevapalabra.html"><button class="agregarpalabra">AGREGAR PALABRA</button></a>
 
+    <header><p logo class="logo">a</p></header>
+    <main main-div>
+        <div class="botones">
+            <button btn-start class="botones__iniciarjuego boton">INICIAR JUEGO</button>
+            <button btn-add class="botones__agregarpalabra boton">AGREGAR <br>PALABRA</button>
+         </div>   
     </main>
+    <main data-juego class="ahorcado-div">
+        <div data-munneco class="munneco">
+            <div class="piso"></div>
+            <div class="poste"></div>
+            <div class="poste2"></div>
+        </div>
+        <div class="palabras">
+            <div palabra class="palabras__adivinar"></div>
+            <div letras-acertadas class="palabras__letras-acertadas"></div>
+            <div letras-erradas class="palabras__letras-erradas"></div>
+        </div>
+        <div class="botones-ahorcado">
+            <button nuevo-juego class="botones-ahorcado__nuevo-juego juego-activo">NUEVO JUEGO</button>
+            <button rendirse class="botones-ahorcado__rendirse">RENDIRSE</button>
+        </div>
+    </main>
+
+    <div agregar-palabra class="agregar-palabra">
+        <textarea minlength="3" maxlength="8" pattern="[a-z]" data-palabra class="agregar-palabra__textarea" placeholder="Ingrese una palabra"></textarea>
+        <div class="agregar-palabra__botones">
+            <button add-start class="agregar-palabra__botones__start">Guardar y empezar</button>
+            <button btn-cancel class="agregar-palabra__botones__cancel">Cancelar</button>
+        </div>
+    </div>
+    
+    
+    <script src="./ahorcado.js"></script>
 </body>
 </html>

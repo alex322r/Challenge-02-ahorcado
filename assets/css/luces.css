@@ -1,0 +1,290 @@
+@keyframes luces {
+    0%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+    
+        }
+    50%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #3afe13;
+              
+                
+            
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13;
+        
+    
+            }
+    75%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+
+    }        
+    
+    100%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #3afe13,
+              0 0 0.8rem #3afe13, 
+              inset 0 0 1.3rem #3afe13;
+            
+        
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13,
+        0 0 82px #3afe13,
+        0 0 92px #3afe13,
+        0 0 102px #3afe13,
+        0 0 151px #3afe13; 
+
+        }
+
+    
+        
+    }
+@keyframes luces-texto {
+    0%{
+        text-shadow: 0 0 7px #fff;      
+        }
+    50%{     
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13;    
+        }
+    75%{
+        text-shadow: 0 0 7px #fff;
+        }        
+    100%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #3afe13,
+        0 0 21px #3afe13,
+        0 0 42px #3afe13,
+        0 0 82px #3afe13,
+        0 0 92px #3afe13,
+        0 0 102px #3afe13,
+        0 0 151px #3afe13; 
+    }
+}
+@keyframes luces-solo-violeta {
+    0%{
+       text-shadow: 0 0 7px #fff;
+    }
+    50%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe;
+       
+    }
+    75%{
+        text-shadow: 0 0 7px #fff;
+        
+    }        
+    100%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe,
+       0 0 82px #b413fe,
+       0 0 92px #b413fe;
+       
+    }
+}  
+
+@keyframes luces-texto-violeta {
+    0%{
+       text-shadow: 0 0 7px #fff;
+    }
+    50%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe;
+       box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #b413fe;
+    }
+    75%{
+        text-shadow: 0 0 7px #fff;
+        box-shadow: 0 0 .2rem #fff;
+    }        
+    100%{
+       text-shadow:
+       0 0 7px #fff,
+       0 0 10px #b413fe,
+       0 0 21px #b413fe,
+       0 0 42px #b413fe,
+       0 0 82px #b413fe,
+       0 0 92px #b413fe;
+       box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #b413fe,
+              0 0 0.8rem #b413fe, 
+              inset 0 0 1.3rem #b413fe;
+    }
+}
+
+@keyframes texto-naranja {
+    0%{
+        text-shadow: 0 0 7px #fff;
+     }
+     50%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13;
+        
+     }
+     75%{
+         text-shadow: 0 0 7px #fff;
+         
+     }        
+     100%{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13,
+        0 0 82px #fe5d13,
+        0 0 92px #fe5d13;
+        
+     }
+    
+}
+
+@keyframes luces-caja-naranja {
+    0%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+    
+        }
+    50%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #fe5d13;
+              
+                
+            
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13;
+        
+    
+            }
+    75%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff;
+        
+        text-shadow: 0 0 7px #fff;
+
+    }        
+    
+    100%{
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #fe5d13,
+              0 0 0.8rem #fe5d13, 
+              inset 0 0 1.3rem #fe5d13;
+            
+        
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fe5d13,
+        0 0 21px #fe5d13,
+        0 0 42px #fe5d13,
+        0 0 82px #fe5d13,
+        0 0 92px #fe5d13,
+        0 0 102px #fe5d13,
+        0 0 151px #fe5d13; 
+
+        }
+
+    
+        
+    }
+
+    @keyframes luces-caja-violeta {
+        0%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff;
+            
+            
+        
+            }
+        50%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #b413fe;
+                  
+            }
+        75%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff;
+    
+        }        
+        
+        100%{
+            box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #b413fe,
+                  0 0 0.8rem #b413fe, 
+                  inset 0 0 1.3rem #b413fe;
+            }
+    
+        
+            
+        }
+    
+        @keyframes luces-espacio-naranja {
+            0%{
+                box-shadow: 0 0 .2rem #fff,
+                      0 0 .2rem #fff;
+                
+                
+            
+                }
+            50%{
+                box-shadow: 0 0 .2rem #fff,
+                      0 0 .2rem #fff,
+                      0 0 2rem #fe5d13;
+                      
+                }
+            75%{
+                box-shadow: 0 0 .2rem #fff,
+                      0 0 .2rem #fff;
+        
+            }        
+            
+            100%{
+                box-shadow: 0 0 .2rem #fff,
+                      0 0 .2rem #fff,
+                      0 0 2rem #fe5d13,
+                      0 0 0.8rem #fe5d13, 
+                      inset 0 0 1.3rem #fe5d13;
+                }
+        
+            
+                
+            }
+    

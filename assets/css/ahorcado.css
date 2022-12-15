@@ -1,0 +1,368 @@
+
+/* *{
+    border: solid #FFF .1px;
+} */
+body {
+    background: #000; 
+}
+
+div {
+    color: #FFF;
+}
+
+
+/* estilizando el header */
+
+header {
+    background: #000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+   
+}
+
+/* logo */
+
+.logo {
+    color: #FFF;
+    font-size: 75px;
+    user-select: none;
+    margin-left: 40px;
+    font-weight: bold;
+    animation: luces-texto 1s infinite;
+}
+.logo-naranja {
+    color: #FFF;
+    font-size: 75px;
+    user-select: none;
+    margin-left: 40px;
+    font-weight: bold;
+    animation: texto-naranja 1s infinite;
+}
+
+.logo-violeta { 
+    color: #FFF;
+    font-size: 75px;
+    user-select: none;
+    margin-left: 40px;
+    font-weight: bold;
+    animation: luces-solo-violeta 1s infinite;
+
+}
+/* main */ 
+
+main {
+    width: 100%;
+    
+    
+}
+
+.botones {
+    width: 320px;
+    margin: 75px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;   
+}
+
+.boton { 
+    background: none;
+    font-family: 'myfont';
+    color: inherit;
+    cursor: pointer;
+    animation: luces-texto 1s infinite;
+    border: none;
+}
+
+.botones__iniciarjuego {
+    width: 320px;
+    height: 200px;
+    font-size: 70px;
+}
+
+.botones__agregarpalabra {
+    width: 280px;
+    height: 167px;
+    font-size: 40px;  
+}
+
+.ahorcado-div {
+    display: none;
+}
+
+.munneco {
+    width: 294px;
+    height: 360px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.palabras {
+    width: 464px;
+    height: 152px;
+    margin: 0 auto 20px;
+}
+.palabras__adivinar {
+    width: 464px;
+    height: 92px;
+
+}
+
+.palabras__letras-acertadas {
+    width: 464px;
+    height: 35px;
+}
+
+.palabras__letras-acertadas span,.palabras__letras-erradas span {
+    font-size: 1.3rem;
+    font-family: 'Raleway';
+    letter-spacing: 1rem;
+}
+.palabras__letras-erradas {
+    width: 464px;
+    height: 24px;
+}
+
+
+
+.botones-ahorcado {
+    width: 800px;
+    height: 67px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.botones-ahorcado__nuevo-juego, .botones-ahorcado__rendirse {
+    color: #FFF;
+    background: #000;
+    font-family: 'myfont';
+    font-size: 40px;
+    border: none;
+    
+    transition: .3s ease-in-out;
+    
+}
+
+.botones-ahorcado__rendirse:hover {
+
+    transform: scale(1.3);
+    animation: luces-texto 1s infinite;
+    cursor: pointer;
+}
+
+.juego-activo:hover {
+    transform: scale(1.3);
+    animation: luces-texto 1s infinite;
+    cursor: pointer;
+}
+
+
+
+
+
+.munneco-parte {
+
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+
+}
+
+.agregar-palabra {
+    display: none;
+    position: relative;
+    top: 160px;
+    flex-direction: column;
+    gap: 200px;
+    background: transparent;
+}
+
+.agregar-palabra__textarea {
+    width: 300px;
+    padding: 20px;
+    resize: none;
+    margin: 0 auto;
+    color:#FFF;
+    background: #000;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-family: 'Raleway';
+}
+
+.agregar-palabra__botones {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.agregar-palabra__botones__start {
+    
+    background: #000;
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 36px;
+    animation: luces-solo-violeta 1s infinite;
+    cursor: pointer;
+}
+
+.agregar-palabra__botones__cancel {
+    
+    background: #000;
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 36px;    
+    animation:luces-solo-violeta 1s infinite;
+    cursor: pointer;
+}
+
+.palabras__adivinar {
+    font-size: 50px;
+    display: flex;
+    gap:20px;
+    font-family: 'myfont';
+    justify-content: center;
+    
+}
+
+.palabras {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    
+}
+
+.palabras__adivinar span {
+    border-bottom: #FFF solid 2px;
+    width: 40px;
+    height: 59.5px;
+    align-self: center;
+    text-align: center;
+    animation: luces-texto 1s infinite;
+    
+}
+
+.piso {
+    width: 294px;
+    height: 5px;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+}
+
+.poste {
+    width: 4.5px;
+    height: 360px;
+    background: #FFF;
+    position: absolute;
+    left: 80.67px;
+}
+
+.poste2 {
+    width: 177.75px;
+    height: 4.5px;
+    background: #FFF;
+    position: absolute;
+    left: 80.67px;
+    top: 0;
+}
+
+.munneco-parte6 {
+    width: 4.5px;
+    height: 49.5px;
+    background: #FFF;
+    position: absolute;
+    top: 0;
+    left: 253.92px;
+}
+
+.munneco-parte5 {
+
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background: transparent;
+    border: #FFF solid 4px;
+    position: absolute;
+    top: 45px;
+    left: 220.67px;
+
+}
+
+.munneco-parte4 {
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    top: 108.88px;
+    left: 235.75px;
+    transform: rotate(30deg);
+    background: #FFF;
+    border-radius: 8px;
+}
+
+.munneco-parte3 {
+
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    top: 108.88px;
+    left: 272.75px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+    background: #FFF;
+    border-radius: 8px;
+}
+
+.munneco-parte2 {
+
+    position: absolute;
+    width: 4.5px;
+    height: 135px;
+    left: 253.92px;
+    top: 112px;
+    background: #FFF;
+    
+}
+
+.munneco-parte1 {
+
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 235.75px;
+    top: 239.62px;
+    border-radius: 8px;
+    transform: rotate(30deg);
+    background: #FFF;
+}
+
+.munneco-parte0 {
+
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 270.62px;
+    top: 239.62px;
+    background: #FFF;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+    
+}
+
+.aviso {
+    position: absolute;
+    color:#FFF;
+    top: 220px;
+    left: 1000px;
+    font-size: 36px;
+    font-family: 'myfont';
+    animation: luces-texto 1s infinite;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+

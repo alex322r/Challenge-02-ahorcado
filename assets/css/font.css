@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('/fonts/hellodenverdisplayregular_v1.6.eot');
+    src: url('/fonts/hellodenverdisplayregular_v1.6.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/hellodenverdisplayregular_v1.6.woff') format('woff'),
+         url('/fonts/hellodenverdisplayregular_v1.6.ttf') format('truetype'),
+         url('/fonts/hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
