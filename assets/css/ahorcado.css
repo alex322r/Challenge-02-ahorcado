@@ -72,8 +72,13 @@ main {
     font-family: 'myfont';
     color: inherit;
     cursor: pointer;
-    animation: luces-texto 1s infinite;
     border: none;
+    transition: transform .1s ease-in;
+}
+
+.boton:hover {
+    animation: luces-texto 1s infinite;
+    transform: scale(1.1);
 }
 
 .botones__iniciarjuego {
@@ -142,7 +147,7 @@ main {
     font-family: 'myfont';
     font-size: 40px;
     border: none;
-    
+    user-select: none;
     transition: .3s ease-in-out;
     
 }
@@ -354,7 +359,9 @@ main {
 
 .aviso {
     position: absolute;
-    color:#FFF;
+    width: 300px;
+    pointer-events: none;
+    color: #FFF;
     top: 220px;
     left: 1000px;
     font-size: 36px;
@@ -362,7 +369,7 @@ main {
     animation: luces-texto 1s infinite;
     border: none;
     outline: none;
-    background: transparent;
+    
 }
 
 

@@ -11,6 +11,7 @@ const munnecoElement = document.querySelector("[data-munneco]")
 const nuevaPalabraElement = document.querySelector("[agregar-palabra]")
 const nuevaPalabraTextarea = document.querySelector("[data-palabra]")
 
+
 const principal = document.querySelector(".botones")
 
 btnRendirse.addEventListener("click", ()=> {
@@ -33,8 +34,9 @@ function iniciarJuego() {
     logo.classList.replace("logo","logo-naranja");    
     btnNuevoJUego.removeAttribute.disabled;
     btnNuevoJUego.classList.add("juego-activo")
-    //nuevoJuego();
-    activarTeclas();    
+    nuevoJuego();
+    activarTeclas();
+
 }
 
 btnNuevaPalabra.addEventListener("click", ()=> {
@@ -68,6 +70,11 @@ let palabraSecretaLetrasUnicas = 0;
 
 
 function nuevoJuego(){
+
+    palabrasNuevas.forEach(palabraNueva => {
+        palabras.push(palabraNueva);
+    });
+    
     palabraSecreta = palabras[Math.floor(Math.random()*palabras.length)]; 
     letrasAcertadas = [];
     letrasErradas = [];
@@ -107,9 +114,9 @@ function comprobarEstado() {
     }
 
     if (vidas == 0) {
-        AvisoGanarPerder("PERDISTE!")
+        AvisoGanarPerder(`PERDISTE! LA PALABRA ERA "${palabraSecreta.toUpperCase()}"`)
         btnNuevoJUego.removeAttribute("disabled") ;
-        document.removeEventListener("keydown", presionarTecla)   
+        document.removeEventListener("keydown", presionarTecla)     
         btnNuevoJUego.classList.add("juego-activo") 
     }
 }
@@ -213,11 +220,11 @@ function dibujarHorca() {
     munnecoElement.appendChild(poste);
     munnecoElement.appendChild(poste2);
 }
-
 const avisoElement = document.createElement("div");
+
 function AvisoGanarPerder(aviso){
     
     avisoElement.classList.add("aviso");
-    avisoElement.innerText=aviso;
+    avisoElement.innerText = aviso;
     ahorcadoElement.appendChild(avisoElement);
 }
